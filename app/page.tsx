@@ -1,7 +1,7 @@
 import AddTodo from "@/components/shared/AddTodo";
 import React from "react";
 
-const page = () => {
+const Home = () => {
   return (
     <div className="w-screen py-20 flex justify-center flex-col items-center">
       <span className="text-3xl font-extrabold uppercase">To-Do-App</span>
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
