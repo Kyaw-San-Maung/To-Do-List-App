@@ -1,6 +1,7 @@
 import React from "react";
 import ChangeTodo from "./ChangeTodo";
 import EditTodo from "./EditTodo";
+import Delete from "./Delete";
 
 const Todo = ({ todo }: any) => {
   const todoStyle = {
@@ -16,6 +17,7 @@ const Todo = ({ todo }: any) => {
       <span className="text-center font-bold uppercase">{todo.title}</span>
       <div className="flex items-center gap-5">
         <EditTodo todo={todo} />
+        <Delete todo={todo} />
       </div>
     </div>
   );

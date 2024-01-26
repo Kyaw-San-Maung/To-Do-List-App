@@ -11,6 +11,9 @@ const EditTodo = ({ todo }: any) => {
   const [editTodo, setEditTodo] = useState(false);
 
   const handleEdit = () => {
+    if (todo.isCompleted == true) {
+      return;
+    }
     setEditTodo(!editTodo);
   };
 
