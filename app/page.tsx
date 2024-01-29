@@ -21,11 +21,13 @@ const Home = async () => {
 
   return (
     <div className="w-screen py-20 flex justify-center flex-col items-center">
-      <span className="text-3xl font-extrabold uppercase">To-Do-App</span>
-      <h1 className="text-3xl font-extrabold uppercase mb-5">
+      <span className="text-3xl font-extrabold uppercase my-9">
+        To-Do <span className="text-orange-700">App</span>
+      </span>
+      {/* <h1 className="text-3xl font-extrabold uppercase mb-5">
         Next.Js 14
         <span className="text-orange-700 ml-2">Server Action</span>
-      </h1>
+      </h1> */}
       <div className="flex justify-center flex-col items-center w-[1000px]">
         <AddTodo />
         <div
